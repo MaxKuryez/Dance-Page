@@ -1,0 +1,31 @@
+.gnav-menu-row {
+  padding: 10px 25px 10px 20px;
+  border-bottom: solid 2px;
+  color: #cfbdbd;
+  position: absolute;
+  left: 10%;
+  width: 77%;
+  .menu-link {
+    float: left;
+    padding: 42px 40px 0px 25px;
+    a {
+      font-size: 25px;
+      color: black;
+    }
+  }
+  .logo-container {
+    float: left;
+    padding-right: 40px;
+    img {
+      height: 100px;
+    }
+  }
+  .location-link {
+    float: right;
+    padding: 42px 0px 0px 25px;
+    a {
+      font-size: 25px;
+      color: black;
+    }
+  }
+}
