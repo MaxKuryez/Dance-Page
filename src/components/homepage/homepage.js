@@ -1,7 +1,16 @@
 import './homepage.scss'
 import Banner from '../homepage_banner/homepage_banner.js'
-import BannerImg1 from '../../assets/homepage_banner1.jpg'
-import BannerImg2 from '../../assets/homepage_banner2.jpg'
+import Tiles from '../tiles/tiles.js'
+import BannerImg1 from '../../assets/homepage_banner_1.jpg'
+import BannerImg2 from '../../assets/homepage_banner_2.jpg'
+
+function importAll(r) {
+  let images = [];
+  r.keys().map((item, index) => { images[index] = r(item); });
+  return images;
+}
+
+const TileImages = importAll(require.context('../../assets/homepage_tiles', false, /\.(png|jpe?g|svg)$/));
 
 function HomePage() {
   return (
@@ -12,6 +21,11 @@ function HomePage() {
         bannerText={'Hello, this is the text on banner!'}
         bannerType={'wide'}
         url={'/a'}/>
+      </div>
+      <div className='hp-banner header'>
+        <Banner
+        bannerText={'The info you need to know.'}
+        bannerType={'header'}/>
       </div>
       <div className='hp-banner second-banner'>
         <Banner
@@ -27,6 +41,9 @@ function HomePage() {
         bannerType={'right'}
         url={'/c'}/>
       </div>
+      <Tiles
+      tileImages={TileImages}
+      titleHeader={'Check out the collection!'}/>
     </div>
   );
 }

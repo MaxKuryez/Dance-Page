@@ -42,6 +42,14 @@ const HomePageBanner = ({
     );
   }
 
+  if (bannerType === 'header') {
+    return (
+      <div className='banner-header'>
+        <p>{bannerText}</p>
+      </div>
+    );
+  }
+
 }
 
 export default HomePageBanner;
