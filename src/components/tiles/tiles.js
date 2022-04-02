@@ -1,15 +1,19 @@
 import './tiles.scss'
-import tile1 from '../../assets/homepage_tiles/hp_tile_6.png'
+import ModalImage from "react-modal-image";
 
 const Tiles = ({
   tileImages,
   titleHeader,
 }) => {
 
-  let elementsArray = [];
+  let tilesArray = [];
 
-  tileImages.forEach(element => {
-    elementsArray.push( <div className='img-container'><img src={element}></img></div> );
+  tileImages.forEach(tile => {
+    tilesArray.push( <div className='img-container'><ModalImage
+    small={tile}
+    large={tile}
+    hideDownload={true}
+  /></div> );
   });
 
   return (
@@ -17,7 +21,7 @@ const Tiles = ({
     <div className='tiles-header'>
       <p>{titleHeader}</p>
     </div>
-      {elementsArray}
+      {tilesArray}
    </div>
   );
 }
