@@ -12,7 +12,7 @@ function importAll(r) {
   return images;
 }
 
-const TileImages = importAll(require.context('../../assets/homepage_tiles', false, /\.(png|jpe?g|svg)$/));
+const TileImages = importAll(require.context('../../assets/homepage_tiles', false, /\.(jpg|png|jpeg|svg)$/));
 
 function HomePage() {
   return (
@@ -22,7 +22,7 @@ function HomePage() {
         banneraImage={BannerImg1}
         bannerText={'Hello, this is the text on banner!'}
         bannerType={'wide'}
-        url={'/a'}/>
+        url={''}/>
       </div>
       <div className='hp-banner header'>
         <Banner
@@ -34,14 +34,14 @@ function HomePage() {
         banneraImage={BannerImg2}
         bannerText={['This is', <br/>, 'a test', <br/>, ' example.']}
         bannerType={'left'}
-        url={'/b'}/>
+        url={''}/>
       </div>
       <div className='hp-banner third-banner'>
         <Banner
         banneraImage={BannerImg2}
         bannerText={'Hello, this is the second banner!'}
         bannerType={'right'}
-        url={'/c'}/>
+        url={''}/>
       </div>
       <div className='hp-tiles'>
         <Tiles
