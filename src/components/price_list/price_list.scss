@@ -1,0 +1,34 @@
+@import '../data/global_variables.scss';
+
+.price-list-container {
+  margin: 45px 25% 0 25%;
+  width: 50%;
+  padding: 0;
+  margin-bottom: 40px;
+  .price-list-header {
+    font-family: $header-font;
+    font-size: $header-font-size;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+  .item-container {
+    font-family: $copy-font;
+    text-align: center;
+    font-size: $copy-font-size;
+    padding: 20px 20px 20px 20px;
+    .item-name {
+      text-align: left;
+    }
+    .item-price {
+      text-align: right;
+    }
+    div {
+      width: 50%;
+      margin: 0;
+      display: inline-block;
+    }
+    &.index-0 {
+      background-color: #ececec;
+    }
+  }
+}

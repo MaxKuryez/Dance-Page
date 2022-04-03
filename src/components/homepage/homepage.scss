@@ -1,3 +1,5 @@
+@import '../data/global_variables.scss';
+
 .homepage-container {
   .first-banner {
     margin-top: 60px;
@@ -18,7 +20,7 @@
     a {
       -webkit-user-drag: none;
       p {
-        color: black;
+        color: $copy-color;
       }
     }
   }

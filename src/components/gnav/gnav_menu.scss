@@ -1,14 +1,17 @@
+@import '../data/global_variables.scss';
+
 .gnav-menu-row {
   border-bottom: solid 2px;
-  color: #cfbdbd;
-  padding: 0 10px 125px 10px;
+  color: $brand-color;
+  padding: 0 20px 125px 20px;
   margin: 25px 7% 0 7%;
   .menu-link {
     float: left;
-    padding: 42px 40px 0px 25px;
+    padding: 65px 32px 0px 25px;
     a {
-      font-size: 25px;
-      color: black;
+      font-family: $header-font;
+      font-size: $gnav-font-size;
+      color: $gnav-color;
     }
   }
   .logo-container {
@@ -20,10 +23,11 @@
   }
   .location-link {
     float: right;
-    padding: 42px 0px 0px 25px;
+    padding: 65px 0px 0px 25px;
     a {
-      font-size: 25px;
-      color: black;
+      font-family: $header-font;
+      font-size: $gnav-font-size;
+      color: $gnav-color;
     }
   }
 }

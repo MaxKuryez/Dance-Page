@@ -1,8 +1,10 @@
-import './homepage.scss'
-import Banner from '../homepage_banner/homepage_banner.js'
-import Tiles from '../tiles/tiles.js'
-import BannerImg1 from '../../assets/homepage_banner_1.jpg'
-import BannerImg2 from '../../assets/homepage_banner_2.jpg'
+import './homepage.scss';
+import Banner from '../homepage_banner/homepage_banner.js';
+import Tiles from '../tiles/tiles.js';
+import PriceList from '../price_list/price_list.js';
+import Prices from '../data/prices.json';
+import BannerImg1 from '../../assets/homepage_banner_1.jpg';
+import BannerImg2 from '../../assets/homepage_banner_2.jpg';
 
 function importAll(r) {
   let images = [];
@@ -41,9 +43,16 @@ function HomePage() {
         bannerType={'right'}
         url={'/c'}/>
       </div>
-      <Tiles
-      tileImages={TileImages}
-      titleHeader={'Check out the collection!'}/>
+      <div className='hp-tiles'>
+        <Tiles
+        tileImages={TileImages}
+        titleHeader={'Check out the collection!'}/>
+        </div>
+      <div className='hp-price-list'>
+        <PriceList
+        header={'Price list.'}
+        prices={Prices}/>
+      </div>
     </div>
   );
 }

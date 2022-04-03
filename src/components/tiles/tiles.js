@@ -1,5 +1,5 @@
-import './tiles.scss'
-import ModalImage from "react-modal-image";
+import './tiles.scss';
+import ModalImage from 'react-modal-image';
 
 const Tiles = ({
   tileImages,
@@ -8,8 +8,8 @@ const Tiles = ({
 
   let tilesArray = [];
 
-  tileImages.forEach(tile => {
-    tilesArray.push( <div className='img-container'><ModalImage
+  tileImages.forEach((tile, index) => {
+    tilesArray.push( <div className='img-container' key={index}><ModalImage
     small={tile}
     large={tile}
     hideDownload={true}
