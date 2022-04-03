@@ -1,33 +1,35 @@
 @import '../data/global_variables.scss';
 
-.gnav-menu-row {
-  border-bottom: solid 2px;
-  color: $brand-color;
-  padding: 0 20px 125px 20px;
-  margin: 25px 7% 0 7%;
-  .menu-link {
-    float: left;
-    padding: 65px 32px 0px 25px;
-    a {
-      font-family: $header-font;
-      font-size: $gnav-font-size;
-      color: $gnav-color;
+.gnav-container {
+  background-color: #ececec;
+  box-shadow: rgb(0 0 0 / 45%) 0px 2px 7px;
+  .gnav-menu-row {
+    padding: 15px 100px 125px 100px;
+    margin: 0 15px 0 15px;
+    .menu-link {
+      float: left;
+      padding: 65px 32px 0px 25px;
+      a {
+        font-family: $header-font;
+        font-size: $gnav-font-size;
+        color: $gnav-color;
+      }
     }
-  }
-  .logo-container {
-    float: left;
-    padding-right: 40px;
-    img {
-      height: 100px;
+    .logo-container {
+      float: left;
+      padding-right: 40px;
+      img {
+        height: 100px;
+      }
     }
-  }
-  .location-link {
-    float: right;
-    padding: 65px 0px 0px 25px;
-    a {
-      font-family: $header-font;
-      font-size: $gnav-font-size;
-      color: $gnav-color;
+    .location-link {
+      float: right;
+      padding: 65px 0px 0px 25px;
+      a {
+        font-family: $header-font;
+        font-size: $gnav-font-size;
+        color: $gnav-color;
+      }
     }
   }
 }
