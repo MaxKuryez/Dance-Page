@@ -1,8 +1,8 @@
 import './homepage.scss';
-import Banner from '../homepage_banner/homepage_banner.js';
-import Tiles from '../tiles/tiles.js';
-import PriceList from '../price_list/price_list.js';
-import Prices from '../data/prices.json';
+import Banner from '../../components/homepage_banner/homepage_banner.js';
+import Tiles from '../../components/tiles/tiles.js';
+import PriceList from '../../components/price_list/price_list.js';
+import Prices from '../../components/data/prices.json';
 import BannerImg1 from '../../assets/homepage_banner_1.jpg';
 import BannerImg2 from '../../assets/homepage_banner_2.jpg';
 
@@ -20,7 +20,6 @@ function HomePage() {
       <div className='hp-banner first-banner'>
         <Banner
         banneraImage={BannerImg1}
-        bannerText={'Hello, this is the text on banner!'}
         bannerType={'wide'}
         url={''}/>
       </div>

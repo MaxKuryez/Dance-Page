@@ -12,7 +12,7 @@ const HomePageBanner = ({
       <div className='homepage-banner-wide'>
         <a href={url}>
           <img src={banneraImage}></img>
-            <p className='banner-text'>{bannerText}</p>
+          {bannerText ? (<><p className='banner-text'>{bannerText}</p></>) : (<></>)}
         </a>
       </div>
     );

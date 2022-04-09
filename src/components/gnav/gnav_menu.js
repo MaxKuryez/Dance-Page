@@ -11,16 +11,16 @@ function Gnav() {
           </a>
         </div>
         <div className='menu-link'>
-          <a>Text</a>
+          <a href='/about-me'>About</a>
         </div>
         <div className='menu-link'>
-          <a>Text</a>
+          <a href='/catalogue'>Catalogue</a>
         </div>
         <div className='menu-link'>
-          <a>Text</a>
+          <a href='/'>textiles</a>
         </div>
         <div className='location-link'>
-          <a>Location</a>
+          <a href='/'>Location</a>
         </div>
       </div>
     </div>
