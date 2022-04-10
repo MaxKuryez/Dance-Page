@@ -17,7 +17,7 @@ function Gnav() {
           <a href='/catalogue'>Catalogue</a>
         </div>
         <div className='menu-link'>
-          <a href='/'>textiles</a>
+          <a href='/'>Textiles</a>
         </div>
         <div className='location-link'>
           <a href='/'>Location</a>

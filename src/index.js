@@ -8,7 +8,7 @@ import './index.scss';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Gnav />
+    <Gnav/>
     <Routs/>
     <Footer/>
   </React.StrictMode>,
