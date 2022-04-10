@@ -7,6 +7,7 @@ import {
   useParams
 } from 'react-router-dom';
 import HomePage from './homepage/homepage.js';
+import AboutUsPage from './about_us/about_us.js';
 
 export default function Routs() {
   return (
@@ -24,7 +25,7 @@ export default function Routs() {
 function AboutUs() {
   return (
     <div>
-     <p>About placeholder</p>
+      <AboutUsPage/>
     </div>
   );
 }
