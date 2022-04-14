@@ -20,8 +20,8 @@ const HomePageBanner = ({
 
   if (bannerType === 'right' || bannerType === 'left') {
     return (
-      <div className='homepage-banner-half'>
-        <a href={url}>
+      <div className='homepage-banner-half' style={{overflow: 'auto'}}>
+        <a href={url} style={{'-webkit-user-drag': 'none'}}>
         {bannerType === 'left' ? (<>
           <div className='homepage-banner-img'>
             <img src={banneraImage}></img>

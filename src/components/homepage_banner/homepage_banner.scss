@@ -17,6 +17,7 @@
     margin: 0;
     position: absolute;
     font-size: $copy-font-size;
+    color: $copy-color;
   }
 }
 
@@ -47,6 +48,7 @@
       position: absolute;
       font-size: $copy-font-size;
       width: 50%;
+      color: $copy-color;
     }
   }
 }

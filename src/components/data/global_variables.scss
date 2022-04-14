@@ -1,5 +1,10 @@
-$header-font: Helvetica, sans-serif;
-$copy-font: Arial;
+@font-face {
+  font-family: 'Cinzel-VariableFont';
+  src: local('Cinzel-VariableFont'), url(../../assets/fonts/Cinzel-VariableFont_wght.ttf) format('truetype');
+}
+
+$header-font: 'Cinzel-VariableFont', Helvetica, sans-serif;
+$copy-font: 'Cinzel-VariableFont', Arial;
 $brand-color: rgb(204 144 228);
 $header-font-size: 45px;
 $copy-font-size: 20px;
