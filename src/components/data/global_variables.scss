@@ -1,11 +1,12 @@
 @font-face {
-  font-family: 'Cinzel-VariableFont';
-  src: local('Cinzel-VariableFont'), url(../../assets/fonts/Cinzel-VariableFont_wght.ttf) format('truetype');
+  font-family: 'Roboto-thin';
+  src: local('Roboto-thin'), url(../../assets/fonts/roboto-thin.ttf) format('truetype');
 }
 
-$header-font: 'Cinzel-VariableFont', Helvetica, sans-serif;
-$copy-font: 'Cinzel-VariableFont', Arial;
+$header-font: 'Roboto-thin', Helvetica, sans-serif;
+$copy-font: 'Roboto-thin', Arial;
 $brand-color: rgb(204 144 228);
+$big-header-font-size: 60px;
 $header-font-size: 45px;
 $copy-font-size: 20px;
 $gnav-font-size: 25px;

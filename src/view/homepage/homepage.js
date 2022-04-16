@@ -2,9 +2,10 @@ import './homepage.scss';
 import Banner from '../../components/homepage_banner/homepage_banner.js';
 import Tiles from '../../components/tiles/tiles.js';
 import PriceList from '../../components/price_list/price_list.js';
-import Prices from '../../components/data/prices.json';
+import Prices from '../../components/data/hp_prices.json';
 import BannerImg1 from '../../assets/homepage_banner_1.jpg';
 import BannerImg2 from '../../assets/homepage_banner_2.jpg';
+import {homepageContent} from '../../components/data/content.js';
 
 function importAll(r) {
   let images = [];
@@ -25,31 +26,31 @@ function HomePage() {
       </div>
       <div className='hp-banner header'>
         <Banner
-        bannerText={'The info you need to know.'}
+        bannerText={homepageContent.header}
         bannerType={'header'}/>
       </div>
       <div className='hp-banner second-banner'>
         <Banner
         banneraImage={BannerImg2}
-        bannerText={['This is', <br/>, 'a test', <br/>, ' example.']}
+        bannerText={homepageContent.banner1}
         bannerType={'left'}
         url={''}/>
       </div>
       <div className='hp-banner third-banner'>
         <Banner
         banneraImage={BannerImg2}
-        bannerText={'Hello, this is the second banner!'}
+        bannerText={homepageContent.banner2}
         bannerType={'right'}
         url={''}/>
       </div>
       <div className='hp-tiles'>
         <Tiles
         tileImages={TileImages}
-        titleHeader={'Check out the collection!'}/>
+        titleHeader={homepageContent.header2}/>
         </div>
       <div className='hp-price-list'>
         <PriceList
-        header={'Price list.'}
+        header={homepageContent.priceHeader}
         prices={Prices}/>
       </div>
     </div>

@@ -3,6 +3,7 @@ import Banner from '../../components/homepage_banner/homepage_banner.js';
 import BannerImg1 from '../../assets/about_us_1.jpg';
 import BannerImg2 from '../../assets/about_us_2.jpg';
 import BannerImg3 from '../../assets/about_us_3.jpg';
+import {aboutUsContent} from '../../components/data/content.js';
 
 function AboutUs() {
   return (
@@ -11,23 +12,23 @@ function AboutUs() {
         <Banner
         banneraImage={BannerImg1}
         bannerType={'wide'}
-        bannerText={'About'}/>
+        bannerText={aboutUsContent.header}/>
       </div>
       <div className='about-us-banner header'>
         <Banner
-        bannerText={'Something else very important.'}
+        bannerText={aboutUsContent.subHeader}
         bannerType={'header'}/>
       </div>
       <div className='hp-banner banner-2'>
         <Banner
         banneraImage={BannerImg2}
-        bannerText={['This is', <br/>, 'a test', <br/>, ' example.']}
+        bannerText={aboutUsContent.banner1}
         bannerType={'left'}/>
       </div>
-      <div className='hp-banner banner-2'>
+      <div className='hp-banner banner-3'>
         <Banner
         banneraImage={BannerImg3}
-        bannerText={['This is', <br/>, 'a test', <br/>, ' example.']}
+        bannerText={aboutUsContent.banner2}
         bannerType={'right'}/>
       </div>
     </div>

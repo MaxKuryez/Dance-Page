@@ -3,8 +3,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link,
-  useParams
 } from 'react-router-dom';
 import HomePage from './homepage/homepage.js';
 import AboutUsPage from './about_us/about_us.js';

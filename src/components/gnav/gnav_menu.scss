@@ -10,13 +10,13 @@
       float: left;
       padding: 65px 32px 0px 25px;
       a {
+        font-weight: 600;
         text-decoration: none;
         font-family: $header-font;
         font-size: $gnav-font-size;
         color: $gnav-color;
         &:hover {
           text-decoration: underline;
-          font-weight: 400;
         }
       }
     }
@@ -35,9 +35,9 @@
         font-family: $header-font;
         font-size: $gnav-font-size;
         color: $gnav-color;
+        font-weight: 600;
         &:hover {
         text-decoration: underline;
-        font-weight: 400;
         }
       }
     }
