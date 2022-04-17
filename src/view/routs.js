@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import HomePage from './homepage/homepage.js';
 import AboutUsPage from './about_us/about_us.js';
+import NotFoundPage from './not_found/not_found.js';
 
 export default function Routs() {
   return (
@@ -45,7 +46,7 @@ function Products() {
 function NotFound() {
   return (
     <div>
-      <p>NotFound placeholder</p>
+      <NotFoundPage/>
     </div>
   );
 }

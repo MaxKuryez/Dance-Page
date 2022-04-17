@@ -1,17 +1,20 @@
-@import '../data/global_variables.scss';
-.footer-container {
-  .first-row {
-    .resources:hover {
-      font-weight: 400;
+@import '../globals/global_variables.scss';
+.footer-block {
+  .footer-container {
+    margin-top: 0;
+    .first-row {
+      .resources:hover {
+        font-weight: 400;
+      }
     }
-  }
-  .third-title, .second-title, .first-title {
-    font-family: $header-font;
-  }
-  .stay-connected-title {
-    font-family: $header-font;
-  }
-  .copyright {
-    font-family: $header-font;
+    .third-title, .second-title, .first-title {
+      font-family: $header-font;
+    }
+    .stay-connected-title {
+      font-family: $header-font;
+    }
+    .copyright {
+      font-family: $header-font;
+    }
   }
 }

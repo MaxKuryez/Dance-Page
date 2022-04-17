@@ -56,6 +56,7 @@ function Gnav() {
  ];
 
   return (
+    <div className='footer-block'>
       <SimpleReactFooter 
       description={description} 
       title={title}
@@ -64,6 +65,7 @@ function Gnav() {
       backgroundColor='#ececec'
       fontColor="black"
       copyrightColor="darkgrey"/>
+    </div>
   );
 }
 

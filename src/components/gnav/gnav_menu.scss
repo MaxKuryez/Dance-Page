@@ -1,7 +1,7 @@
-@import '../data/global_variables.scss';
+@import '../globals/global_variables.scss';
 
 .gnav-container {
-  background-color: #ececec;
+  background-color: #7f797d;
   box-shadow: rgb(0 0 0 / 45%) 0px 2px 7px;
   .gnav-menu-row {
     padding: 15px 100px 125px 100px;
@@ -23,6 +23,7 @@
     .logo-container {
       float: left;
       padding-right: 40px;
+      padding-top: 6px;
       img {
         height: 100px;
       }

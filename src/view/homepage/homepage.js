@@ -2,10 +2,10 @@ import './homepage.scss';
 import Banner from '../../components/homepage_banner/homepage_banner.js';
 import Tiles from '../../components/tiles/tiles.js';
 import PriceList from '../../components/price_list/price_list.js';
-import Prices from '../../components/data/hp_prices.json';
+import Prices from '../../components/globals/hp_prices.json';
 import BannerImg1 from '../../assets/homepage_banner_1.jpg';
 import BannerImg2 from '../../assets/homepage_banner_2.jpg';
-import {homepageContent} from '../../components/data/content.js';
+import {homepageContent} from '../../components/globals/content.js';
 
 function importAll(r) {
   let images = [];

@@ -1,7 +1,7 @@
 const aboutUsContent = {
   header: 'Обо мне',
   subHeader: ['Мы в YULIA KURYEZ Ballroom Dresses', <br/>, 'уже 8 лет шьём бальные платья для соревнований'],
-  banner1: [ <h1>Юлия Курьез - основатель и главный дизайнер YULIA KURYEZ Ballroom Dresses.</h1>,
+  banner1: [<h1>Юлия Курьез - основатель и главный дизайнер YULIA KURYEZ Ballroom Dresses.</h1>,
     'Расскажу коротко обо мне и моих платьях - нам  придется оглянуться назад. Все началось с семьи и детей. ',
     'Моему сыну было 6 лет, когда он достаточно твердо завил о желании заниматься бальными танцами. ', <br/>, <br/>,
     'Время шло, сын занимался в клубе и забирала я его с тренировок уже с младшей дочерью… Надо ли говорить, ',
@@ -24,4 +24,8 @@ const homepageContent = {
   priceHeader: 'Price list.',
 }
 
-export {aboutUsContent, homepageContent};
+const notFound = {
+  header: ['Страница не найдена', <h1>404</h1>],
+}
+
+export {aboutUsContent, homepageContent, notFound};
