@@ -33,6 +33,7 @@ const homepageContent = {
 
 const contactUsContent = {
   header: 'Сконтактируйтесь со мной',
+  thanks: 'Спасибо за ваш вопрос!',
 }
 
 const notFound = {

@@ -44,12 +44,17 @@ function ContactUs() {
 
   return (
     <div className='contact-us-container'>
-      <div className='contact-us-banner header'>
+      {sent ? <>
+        <div className='contact-us-banner header'>
         <Banner
-        bannerText={contactUsContent.header}
+        bannerText={contactUsContent.thanks}
         bannerType={'header'}/>
-      </div>
-      {sent ? <><div>test test</div></> : <>
+        </div></> : <>
+        <div className='contact-us-banner header'>
+          <Banner
+          bannerText={contactUsContent.header}
+          bannerType={'header'}/>
+        </div>
         <div className='contact-us-form-container'>
           <Card>
             <Card.Body>
