@@ -7,6 +7,7 @@ import {
 import HomePage from './homepage/homepage.js';
 import AboutUsPage from './about_us/about_us.js';
 import NotFoundPage from './not_found/not_found.js';
+import ContactUsPage from './contact_us/contact_us.js';
 
 export default function Routs() {
   return (
@@ -15,6 +16,7 @@ export default function Routs() {
           <Route path="/about-me" element={<AboutUs />} />
           <Route exact path="/" element={<Home />} />
           <Route path="/catalogue" element={<Products />} />
+          <Route path="/contact-me" element={<ContactUs />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
     </Router>
@@ -32,6 +34,12 @@ function AboutUs() {
 function Home() {
   return (
       <HomePage/>
+  );
+}
+
+function ContactUs() {
+  return (
+    <ContactUsPage/>
   );
 }
 

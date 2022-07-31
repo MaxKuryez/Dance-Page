@@ -1,0 +1,20 @@
+@import '../../components/globals/global_variables.scss';
+
+.contact-us-container {
+  .contact-us-form-container {
+    .card {
+      border: none;
+      margin: auto;
+      max-width: 700px;
+      padding-right: 5%;
+      padding-left: 5%;
+      #question {
+        textarea {
+          resize: none;
+          height: 150px;
+        }
+      }
+    }
+    margin-bottom: 60px;
+  }
+}

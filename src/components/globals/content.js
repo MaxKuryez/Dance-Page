@@ -17,15 +17,26 @@ const aboutUsContent = {
 }
 
 const homepageContent = {
-  header: 'The info you need to know.',
-  banner1: ['This is', <br/>, 'a test', <br/>, ' example.'],
-  banner2: ['This is', <br/>, 'a test', <br/>, ' example.'],
-  header2: 'Check out the collection!',
-  priceHeader: 'Price list.',
+  header: 'Бальные платья, которые расцветают на паркете',
+  topBanner: [' YULIA KURYEZ', <br/> ,'Ballroom Dresses',],
+  banner1: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
+  'ut labore et dolore magna aliqua. Etiam sit amet nisl purus in mollis.', <br/>, <br/>, 
+  'Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. Augue ut lectus arcu bibendum at varius.',
+  'Dolor sed viverra ipsum nunc.'],
+  banner2: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
+  'ut labore et dolore magna aliqua. Etiam sit amet nisl purus in mollis.', <br/>, <br/>, 
+  'Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. Augue ut lectus arcu bibendum at varius.',
+  'Dolor sed viverra ipsum nunc.'],
+  header2: 'Платья, выпущенные на паркет',
+  priceHeader: 'Цены.',
+}
+
+const contactUsContent = {
+  header: 'Сконтактируйтесь со мной',
 }
 
 const notFound = {
   header: ['Страница не найдена', <h1>404</h1>],
 }
 
-export {aboutUsContent, homepageContent, notFound};
+export {aboutUsContent, homepageContent, contactUsContent, notFound};

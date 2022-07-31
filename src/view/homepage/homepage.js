@@ -22,7 +22,7 @@ function HomePage() {
         <Banner
         banneraImage={BannerImg1}
         bannerType={'wide'}
-        url={''}/>
+        bannerText={homepageContent.topBanner}/>
       </div>
       <div className='hp-banner header'>
         <Banner
@@ -33,15 +33,13 @@ function HomePage() {
         <Banner
         banneraImage={BannerImg2}
         bannerText={homepageContent.banner1}
-        bannerType={'left'}
-        url={''}/>
+        bannerType={'left'}/>
       </div>
       <div className='hp-banner third-banner'>
         <Banner
         banneraImage={BannerImg2}
         bannerText={homepageContent.banner2}
-        bannerType={'right'}
-        url={''}/>
+        bannerType={'right'}/>
       </div>
       <div className='hp-tiles'>
         <Tiles
