@@ -1,71 +1,27 @@
 import './footer.scss';
-import SimpleReactFooter from 'simple-react-footer';
+import vkLogo from '../../assets/vk-logo.png';
 
 function Gnav() {
 
-  const description = "According to wikipedia, the cat (Felis catus) is a domestic species of small carnivorous mammal. It is the only domesticated species in the family Felidae and is often referred to as the domestic cat to distinguish it from the wild members of the family. A cat can either be a house cat, a farm cat or a feral cat; the latter ranges freely and avoids human contact.";
-  const title = "Cats";
-  const columns = [
-    {
-        title: "Resources",
-        resources: [
-            {
-                name: "About",
-                link: "/about"
-            },
-            {
-                name: "Careers",
-                link: "/careers"
-            },
-            {
-                name: "Contact",
-                link: "/contact"
-            },
-            {
-                name: "Admin",
-                link: "/admin"
-            }
-        ]
-    },
-    {
-        title: "Legal",
-        resources: [
-            {
-                name: "Privacy",
-                link: "/privacy"
-            },
-            {
-                name: "Terms",
-                link: "/terms"
-            }
-        ]
-    },
-    {
-        title: "Visit",
-        resources: [
-            {
-                name: "Locations",
-                link: "/locations"
-            },
-            {
-                name: "Culture",
-                link: "/culture"
-            }
-        ]
-    }
- ];
-
   return (
-    <div className='footer-block'>
-      <SimpleReactFooter 
-      description={description} 
-      title={title}
-      columns={columns}
-      iconColor="black"
-      backgroundColor='#ececec'
-      fontColor="black"
-      copyrightColor="darkgrey"/>
-    </div>
+    <div className='footer-container'>
+      <div className='footer-menu-row'>
+        <div className='menu-link'>
+          <span>Телефон: <a href='tel:+71235678'>+7 123 56 78</a></span>
+        </div>
+        <div className='menu-link'>
+          <span>Почта: <a href='mailto:test@test.mail'>test@test.mail</a></span>
+        </div>
+        <div className='menu-link'>
+          <span><a href='/'>РУССКИЙ</a> / <a href='/'>ENGLISH</a></span>
+        </div>
+        <div className='logo-container'>
+            <a href='https://vk.com/yuliyakuryezstudio' target='blank'>
+               <img src={vkLogo}></img>
+            </a>
+          </div>
+      </div>
+  </div>
   );
 }
 

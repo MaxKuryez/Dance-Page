@@ -73,7 +73,7 @@ function ContactUs() {
                 <Form.Group className='mt-3' id='email' key='email'>
                   <Form.Label>Электронная Почта</Form.Label>
                   <Form.Control type='email' name='user_email' required pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{1,4}$'/>
-                  <Form.Control.Feedback type='invalid'>Пожалуйста, введите почту в фориате email@example.com.</Form.Control.Feedback>
+                  <Form.Control.Feedback type='invalid'>Пожалуйста, введите почту в формате email@example.com.</Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group className='mt-3' id='question' key='question'>
                   <Form.Label>Вопрос</Form.Label>
