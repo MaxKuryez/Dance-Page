@@ -1,5 +1,8 @@
 .not-found-container {
   background-color: #e7c6e1;
+  position: relative;
+  z-index: -1;
+  height: 500px;
   .homepage-banner-img {
     margin: 35px 0 10px 0;
   }
@@ -13,5 +16,8 @@
       font-size: 100px;
       color: #4e4a50;
     }
+  }
+  .homepage-banner-half {
+    padding-top: 65px;
   }
 }

@@ -1,0 +1,34 @@
+@import '../globals/global_variables.scss';
+
+.carousele-container {
+  margin-bottom: 60px;
+  .carousel-inner {
+    width: 60%;
+    margin: auto;
+    .carousel-caption {
+      position: relative;
+      left: 0;
+      right: 0;
+      margin: auto;
+      padding-top: 40px;
+      h5 {
+        font-family: $copy-font;
+        font-size: $header-font-size;
+      }
+      p {
+        font-family: $copy-font;
+        font-size: $copy-font-size;
+        font-weight: 600;
+      }
+    }
+  }
+  .test {
+    text-align: center;
+  }
+  .slick-next {
+    right: 0;
+  }
+  .slick-prev {
+    left: 0;
+  }
+}

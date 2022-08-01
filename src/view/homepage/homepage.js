@@ -3,17 +3,12 @@ import Banner from '../../components/homepage_banner/homepage_banner.js';
 import Tiles from '../../components/tiles/tiles.js';
 import PriceList from '../../components/price_list/price_list.js';
 import Prices from '../../components/globals/hp_prices.json';
-import BannerImg1 from '../../assets/homepage_banner_1.jpg';
-import BannerImg2 from '../../assets/homepage_banner_2.jpg';
+import BannerImg1 from '../../assets/homepage/homepage_banner_1.jpg';
+import BannerImg2 from '../../assets/homepage/homepage_banner_2.jpg';
 import {homepageContent} from '../../components/globals/content.js';
+import {importAll} from '../../components/globals/functions.js';
 
-function importAll(r) {
-  let images = [];
-  r.keys().map((item, index) => { images[index] = r(item); });
-  return images;
-}
-
-const TileImages = importAll(require.context('../../assets/homepage_tiles', false, /\.(jpg|png|jpeg|svg)$/));
+const TileImages = importAll(require.context('../../assets/homepage/homepage_tiles', false, /\.(jpg|png|jpeg|svg)$/));
 
 function HomePage() {
   return (

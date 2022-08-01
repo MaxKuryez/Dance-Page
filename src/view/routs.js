@@ -8,6 +8,7 @@ import HomePage from './homepage/homepage.js';
 import AboutUsPage from './about_us/about_us.js';
 import NotFoundPage from './not_found/not_found.js';
 import ContactUsPage from './contact_us/contact_us.js';
+import CataloguePage from './catalogue/catalogue.js';
 
 export default function Routs() {
   return (
@@ -15,7 +16,7 @@ export default function Routs() {
         <Routes>
           <Route path="/about-me" element={<AboutUs />} />
           <Route exact path="/" element={<Home />} />
-          <Route path="/catalogue" element={<Products />} />
+          <Route path="/catalogue" element={<Catalogue />} />
           <Route path="/contact-me" element={<ContactUs />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
@@ -43,10 +44,10 @@ function ContactUs() {
   );
 }
 
-function Products() {
+function Catalogue() {
   return (
     <div>
-     <p>Catalogue placeholder</p>
+      <CataloguePage/>
     </div>
   );
 }

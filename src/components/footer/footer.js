@@ -1,5 +1,5 @@
 import './footer.scss';
-import vkLogo from '../../assets/vk-logo.png';
+import vkLogo from '../../assets/global/vk-logo.png';
 
 function Gnav() {
 

@@ -1,8 +1,8 @@
 import './about_us.scss';
 import Banner from '../../components/homepage_banner/homepage_banner.js';
-import BannerImg1 from '../../assets/about_us_1.jpg';
-import BannerImg2 from '../../assets/about_us_2.jpg';
-import BannerImg3 from '../../assets/about_us_3.jpg';
+import BannerImg1 from '../../assets/about_us/about_us_1.jpg';
+import BannerImg2 from '../../assets/about_us/about_us_2.jpg';
+import BannerImg3 from '../../assets/about_us/about_us_3.jpg';
 import {aboutUsContent} from '../../components/globals/content.js';
 
 function AboutUs() {

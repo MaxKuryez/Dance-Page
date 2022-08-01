@@ -1,6 +1,6 @@
 import './not_found.scss';
 import Banner from '../../components/homepage_banner/homepage_banner.js';
-import BannerImg1 from '../../assets/logo_3.jpg';
+import BannerImg1 from '../../assets/global/logo_3.jpg';
 import {notFound} from '../../components/globals/content.js';
 
 function AboutUs() {

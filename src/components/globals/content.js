@@ -36,8 +36,12 @@ const contactUsContent = {
   thanks: 'Спасибо за ваш вопрос!',
 }
 
+const catalogueContent = {
+  header: 'Мои Работы',
+}
+
 const notFound = {
   header: ['Страница не найдена', <h1>404</h1>],
 }
 
-export {aboutUsContent, homepageContent, contactUsContent, notFound};
+export {aboutUsContent, homepageContent, contactUsContent, catalogueContent, notFound};
