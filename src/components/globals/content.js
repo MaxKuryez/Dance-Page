@@ -38,6 +38,24 @@ const contactUsContent = {
 
 const catalogueContent = {
   header: 'Мои Работы',
+  firstCarousele: [
+    {
+      header: 'First slide label',
+      copy: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
+    },
+    {
+      header: 'Second slide label',
+      copy: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
+    },
+    {
+      header: 'Third slide label',
+      copy: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
+    },
+    {
+      header: 'Fourth slide label',
+      copy: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
+    },
+  ],
 }
 
 const notFound = {

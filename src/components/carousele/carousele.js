@@ -1,11 +1,11 @@
 import './carousele.scss'
-import Carousel from 'react-bootstrap/Carousel';
-import Slider from "react-slick";
+import Slider from 'react-slick';
 
 function CarouselBlock({
   catalogueImages,
   catalogueCopy,
 }) {
+
   const settings = {
     dots: true,
     infinite: false,
@@ -13,19 +13,18 @@ function CarouselBlock({
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
+    className: 'slider-component',
   };
 
   let catalogueArray = [];
 
-  console.log(catalogueImages.length);
-
   catalogueImages.forEach((image, index) => {
     console.log(index);
     catalogueArray.push(
-      <div className='test'>
+      <div className='card-container'>
         <img className='d-block w-50 m-auto' src={image} alt='First slide'/>
-          <h5>First slide label {index}</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>{catalogueCopy[index] && catalogueCopy[index].header ? catalogueCopy[index].header : ''}</h3>
+          <p>{catalogueCopy[index] && catalogueCopy[index].copy ? catalogueCopy[index].copy : ''}</p>
       </div>
     );
   });
@@ -33,10 +32,8 @@ function CarouselBlock({
   return (
     <div className='carousele-container'>
       <Slider {...settings}>
-          {catalogueArray}
-        </Slider>
-        <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+        {catalogueArray}
+      </Slider>
     </div>
   );
 }

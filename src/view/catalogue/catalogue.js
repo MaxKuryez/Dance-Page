@@ -15,8 +15,9 @@ function Catalogue() {
         bannerText={catalogueContent.header}/>
       </div>
       <div className='carousele-1'>
-        <CarouselBlock 
-        catalogueImages={pinkImages}/>
+        <CarouselBlock
+        catalogueImages={pinkImages}
+        catalogueCopy={catalogueContent.firstCarousele}/>
       </div>
     </div>
   );
