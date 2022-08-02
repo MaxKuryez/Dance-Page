@@ -20,20 +20,58 @@ const homepageContent = {
   header: 'Бальные платья, которые расцветают на паркете',
   topBanner: [' YULIA KURYEZ', <br/> ,'Ballroom Dresses',],
   banner1: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
-  'ut labore et dolore magna aliqua. Etiam sit amet nisl purus in mollis.', <br/>, <br/>, 
-  'Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. Augue ut lectus arcu bibendum at varius.',
-  'Dolor sed viverra ipsum nunc.'],
+    'ut labore et dolore magna aliqua. Etiam sit amet nisl purus in mollis.', <br/>, <br/>, 
+    'Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. Augue ut lectus arcu bibendum at varius.',
+    'Dolor sed viverra ipsum nunc.'],
   banner2: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
-  'ut labore et dolore magna aliqua. Etiam sit amet nisl purus in mollis.', <br/>, <br/>, 
-  'Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. Augue ut lectus arcu bibendum at varius.',
-  'Dolor sed viverra ipsum nunc.'],
+    'ut labore et dolore magna aliqua. Etiam sit amet nisl purus in mollis.', <br/>, <br/>, 
+    'Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. Augue ut lectus arcu bibendum at varius.',
+    'Dolor sed viverra ipsum nunc.'],
   header2: 'Платья, выпущенные на паркет',
   priceHeader: 'Цены.',
+  priceList: {'list' : [
+    {
+      name: 'blue dress',
+      price: '5000.00 руб.'
+    },
+    {
+      name: 'green dress',
+      price: '200.00 руб.'
+    },
+    {
+      name: 'some dress',
+      price: '1300.00 руб.'
+    },
+    {
+      name: 'not a dress',
+      price: '1200.00 руб.'
+    },
+    {
+      name: 'yellow dress',
+      price: '800.00 руб.'
+    },
+    {
+      name: 'pink dress',
+      price: '700.00 руб.'
+    }
+  ]}
 }
 
 const contactUsContent = {
   header: 'Сконтактируйтесь со мной',
   thanks: 'Спасибо за ваш вопрос!',
+  name: 'Имя',
+  surname: 'Фамилия',
+  email: 'Электронная Почта',
+  question: 'Вопрос',
+  phone: 'Телефон',
+  nameValidation: 'Это поле является обязательным!',
+  surnameValidation: 'Это поле является обязательным!',
+  emailValidation: 'Пожалуйста, введите почту в формате email@example.com.',
+  questionValidation: 'Это поле является обязательным!',
+  phoneValidation: 'Пожалуйста, введите телефон в формате 123456789.',
+  submit: 'Задать вопрос',
+  generalError: 'Что-то пошло не так.',
 }
 
 const catalogueContent = {
@@ -62,4 +100,16 @@ const notFound = {
   header: ['Страница не найдена', <h1>404</h1>],
 }
 
-export {aboutUsContent, homepageContent, contactUsContent, catalogueContent, notFound};
+const contentGnav = {
+  aboutMe: 'ОБО МНЕ',
+  catalogue: 'МОИ РАБОТЫ',
+  process: 'ПРОЦЕСС',
+  contactMe: 'КОНТАКТ',
+}
+
+const contentHeader = {
+  email: ['Почта: ', <a href='mailto:test@test.mail'>test@test.mail</a>],
+  phone: ['Телефон: ', <a href='tel:+71235678'>+7 123 56 78</a>],
+}
+
+export {aboutUsContent, homepageContent, contactUsContent, catalogueContent, notFound, contentGnav, contentHeader};

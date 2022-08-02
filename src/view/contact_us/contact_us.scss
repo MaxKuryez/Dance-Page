@@ -21,6 +21,15 @@
         font-weight: 600;
         font-size: $copy-font-size;
       }
+      input {
+        font-weight: 600;
+      }
+      textarea {
+        font-weight: 600;
+      }
+      .alert-danger {
+        border-radius: 0;
+      }
     }
     margin-bottom: 60px;
   }

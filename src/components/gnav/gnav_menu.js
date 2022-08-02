@@ -1,5 +1,6 @@
 import logo from '../../assets/global/logo.jpg';
 import './gnav_menu.scss';
+import {contentGnav} from '../globals/content.js'
 
 function Gnav() {
   return (
@@ -11,16 +12,16 @@ function Gnav() {
           </a>
         </div>
         <div className='menu-link'>
-          <a href='/about-me'>ОБО МНЕ</a>
+          <a href='/about-me'>{contentGnav.aboutMe}</a>
         </div>
         <div className='menu-link'>
-          <a href='/catalogue'>МОИ РАБОТЫ</a>
+          <a href='/catalogue'>{contentGnav.catalogue}</a>
         </div>
         <div className='menu-link'>
-          <a href='/process'>ПРОЦЕСС</a>
+          <a href='/process'>{contentGnav.process}</a>
         </div>
         <div className='location-link'>
-          <a href='/contact-me'>КОНТАКТ</a>
+          <a href='/contact-me'>{contentGnav.contactMe}</a>
         </div>
       </div>
     </div>

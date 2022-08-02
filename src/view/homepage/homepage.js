@@ -2,7 +2,6 @@ import './homepage.scss';
 import Banner from '../../components/homepage_banner/homepage_banner.js';
 import Tiles from '../../components/tiles/tiles.js';
 import PriceList from '../../components/price_list/price_list.js';
-import Prices from '../../components/globals/hp_prices.json';
 import BannerImg1 from '../../assets/homepage/homepage_banner_1.jpg';
 import BannerImg2 from '../../assets/homepage/homepage_banner_2.jpg';
 import {homepageContent} from '../../components/globals/content.js';
@@ -44,7 +43,7 @@ function HomePage() {
       <div className='hp-price-list'>
         <PriceList
         header={homepageContent.priceHeader}
-        prices={Prices}/>
+        prices={homepageContent.priceList}/>
       </div>
     </div>
   );

@@ -34,7 +34,7 @@ function ContactUs() {
             throw new Error(error);;
           });
       } catch (error) {
-        error ? setError('Что-то пошло не так.') : setError('Что-то пошло не так.');
+        error ? setError(contactUsContent.generalError) : setError(contactUsContent.generalError);
       }
     }
 
@@ -61,34 +61,34 @@ function ContactUs() {
               {error && <Alert variant='danger'>{error}</Alert>}
               <Form noValidate validated={validated} onSubmit={handleSubmit} ref={formRef}>
                 <Form.Group className='mt-3' id='name' key='name'>
-                  <Form.Label>Имя</Form.Label>
+                  <Form.Label>{contactUsContent.name}</Form.Label>
                   <Form.Control type='name' name='user_name' required/>
-                  <Form.Control.Feedback type="invalid">Это поле является обязательным!</Form.Control.Feedback>
+                  <Form.Control.Feedback type="invalid">{contactUsContent.nameValidation}</Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group className='mt-3' id='surname' key='surname'>
-                  <Form.Label>Фамилия</Form.Label>
+                  <Form.Label>{contactUsContent.surname}</Form.Label>
                   <Form.Control type='surname' name='user_surname' required/>
-                  <Form.Control.Feedback type='invalid'>Это поле является обязательным!</Form.Control.Feedback>
+                  <Form.Control.Feedback type='invalid'>{contactUsContent.surnameValidation}</Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group className='mt-3' id='email' key='email'>
-                  <Form.Label>Электронная Почта</Form.Label>
+                  <Form.Label>{contactUsContent.email}</Form.Label>
                   <Form.Control type='email' name='user_email' required pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{1,4}$'/>
-                  <Form.Control.Feedback type='invalid'>Пожалуйста, введите почту в формате email@example.com.</Form.Control.Feedback>
+                  <Form.Control.Feedback type='invalid'>{contactUsContent.emailValidation}</Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group className='mt-3' id='question' key='question'>
-                  <Form.Label>Вопрос</Form.Label>
+                  <Form.Label>{contactUsContent.question}</Form.Label>
                   <Form.Control type='text' as="textarea" rows={3} name='user_question' required/>
-                  <Form.Control.Feedback type="invalid">Это поле является обязательным!</Form.Control.Feedback>
+                  <Form.Control.Feedback type="invalid">{contactUsContent.questionValidation}</Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group className='mt-3' id='phone' key='phone'>
-                  <Form.Label>Телефон</Form.Label>
+                  <Form.Label>{contactUsContent.phone}</Form.Label>
                   <Form.Control type='name' name='user_phone' pattern='[0-9]{6,12}$'/>
-                  <Form.Control.Feedback type="invalid">Пожалуйста, введите телефон в формате 123456789.</Form.Control.Feedback>
+                  <Form.Control.Feedback type="invalid">{contactUsContent.phoneValidation}</Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group className='mt-3' id='date' key='date'>
                   <Form.Control type='name' name='date' defaultValue={today} hidden/>
                 </Form.Group>
-                <Button disabled={loading} className='w-100 mt-3' variant='flat' type='submit'>Задать вопрос</Button>
+                <Button disabled={loading} className='w-100 mt-3' variant='flat' type='submit'>{contactUsContent.submit}</Button>
               </Form>
             </Card.Body>
           </Card>
