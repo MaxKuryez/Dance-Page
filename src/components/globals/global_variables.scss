@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Roboto-thin';
+  src: local('Roboto-thin'), url(../../assets/fonts/roboto-thin.ttf) format('truetype');
+}
+
+$header-font: 'Roboto-thin', Helvetica, sans-serif;
+$copy-font: 'Roboto-thin', Arial;
+$brand-color: rgb(204 144 228);
+$big-header-font-size: 60px;
+$header-font-size: 45px;
+$copy-font-size: 20px;
+$gnav-font-size: 15px;
+$header-color: black;
+$copy-color: black;
+$gnav-color: black;

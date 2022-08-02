@@ -1,0 +1,22 @@
+@import '../../components/globals/global_variables.scss';
+
+.homepage-container {
+  .first-banner {
+    margin-top: 80px;
+    a {
+      p {
+        top: 38%;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.disclaimer {
+  display: none;
+}

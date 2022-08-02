@@ -1,0 +1,27 @@
+{
+  "list" : [
+  {
+    "name" : "blue dress",
+    "price" : "1000.00 руб."
+  },
+  {
+    "name" : "green dress",
+    "price" : "200.00 руб."
+  },
+  {
+    "name" : "some dress",
+    "price" : "1300.00 руб."
+  },
+  {
+    "name" : "not a dress",
+    "price" : "1200.00 руб."
+  },
+  {
+    "name" : "yellow dress",
+    "price" : "800.00 руб."
+  },
+  {
+    "name" : "pink dress",
+    "price" : "700.00 руб."
+  }]
+}
