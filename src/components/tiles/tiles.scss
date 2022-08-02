@@ -26,7 +26,11 @@
       user-select: none;
     }
     .__react_modal_image__header {
-      background-color: $brand-color;
+      background-color: #b0b0b0;
+      height: 40px;
+    }
+    .__react_modal_image__icon_menu {
+      margin-top: -7px;
     }
   }
 }
