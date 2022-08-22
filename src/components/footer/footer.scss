@@ -18,6 +18,9 @@
           text-decoration: underline;
         }
       }
+      &.language {
+        cursor: pointer;
+      }
     }
     .logo-container {
       float: right;
