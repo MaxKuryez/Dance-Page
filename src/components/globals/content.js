@@ -158,9 +158,39 @@ const contentHeaderLang = {
   },
 }
 
-const contentGnav = contentGnavLang[currentCookie];
-const contentHeader = contentHeaderLang[currentCookie];
-const contactUsContent = contactUsContentLang[currentCookie];
-const notFound = notFoundLang[currentCookie];
+const processContentLang = {
+  ru: {
+    header: 'Процесс',
+      banner1: [<h1>Первый шаг</h1>, 'Вы можете заказать платье на заказ двумя способами: заполнив нашу онлайн-форму или отправив электронное',
+      'письмо по адресу', 'sales@emcouture.com', <br/>, <br/>, 'Лучший способ начать — описать свое видение платья, о котором вы мечтаете. ',
+      'Часто бывает полезно прикрепить свои фотографии или видео, где мы можем видеть вас как в танцевальной позе, так и стоящей прямо.',
+      <br/>, 'На этом этапе вы также должны предоставить все размеры вашего тела (дюймы/см) и федерацию, в которой вы танцуете.'
+    ],
+    banner2: [<h1>Создание платья</h1>, 'Мы подберем наиболее подходящие и самые качественные материалы, декоративные детали',
+    'Кристаллы Сваровски.', <br/>, 'Портнихи сошьют платье, а декораторы подберут украшения из кристаллов, учитывая ваши пожелания',
+    'потребности и требования.', <br/>, <br/>, 'На протяжении всего процесса шитья наша команда будет регулярно присылать вам фотографии ',
+    'процесса пошива одежды, чтобы вы могли убедиться, что это именно то платье, которое вы хотели.'
+    ],
+  },
+  en: {
+    header: 'Process',
+    banner1: [<h1>The first step</h1>, 'You can order a custom made dress in two ways: by filling our online form or sending an email to',
+      'sales@emcouture.com', <br/>, <br/>, 'The best way to start is to describe the vision of the dress you are dreaming about. ',
+      'It is often useful to attach your own pictures or videos, where we can see you both in a dance position and standing straight as well.',
+      <br/>, 'At this stage you should also provide all of your body measurements (in/cm) and  federation you are dancing in.'
+    ],
+    banner2: [<h1>Creating the dress</h1>, 'We will select the most suitable and the highest quality materials, decorative details, ',
+      'Swarovski crystals.', <br/>, 'Dressmakers will sew the dress and decorators select crystals decorations, considering your ',
+      'needs and requirements.', <br/>, <br/>, 'During all the sewing process our team will regularly send you pictures of dressmaking progress ',
+      'that you can make sure that it is your wanted dress.'
+    ],
+  },
+}
 
-export {aboutUsContent, homepageContent, contactUsContent, catalogueContent, notFound, contentGnav, contentHeader};
+const contentGnav      = contentGnavLang[currentCookie];
+const contentHeader    = contentHeaderLang[currentCookie];
+const contactUsContent = contactUsContentLang[currentCookie];
+const notFound         = notFoundLang[currentCookie];
+const processContent   = processContentLang[currentCookie];
+
+export {aboutUsContent, homepageContent, contactUsContent, catalogueContent, notFound, contentGnav, contentHeader, processContent};
