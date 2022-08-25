@@ -4,6 +4,7 @@ import Tiles from '../../components/tiles/tiles.js';
 import PriceList from '../../components/price_list/price_list.js';
 import BannerImg1 from '../../assets/homepage/homepage_banner_1.jpg';
 import BannerImg2 from '../../assets/homepage/homepage_banner_2.jpg';
+import BannerImg3 from '../../assets/homepage/homepage_banner_3.jpg';
 import {homepageContent} from '../../components/globals/content.js';
 import {importAll} from '../../components/globals/functions.js';
 
@@ -31,7 +32,7 @@ function HomePage() {
       </div>
       <div className='hp-banner third-banner'>
         <Banner
-        banneraImage={BannerImg2}
+        banneraImage={BannerImg3}
         bannerText={homepageContent.banner2}
         bannerType={'right'}/>
       </div>

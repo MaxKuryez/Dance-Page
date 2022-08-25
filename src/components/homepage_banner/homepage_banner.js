@@ -50,6 +50,14 @@ const HomePageBanner = ({
     );
   }
 
+  if (bannerType === 'text') {
+    return (
+      <div className='banner-text'>
+        <p>{bannerText}</p>
+      </div>
+    );
+  }
+
 }
 
 export default HomePageBanner;

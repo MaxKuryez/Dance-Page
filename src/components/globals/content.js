@@ -3,68 +3,177 @@ import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 let currentCookie = cookies.get('Lang') || 'ru';
 
-const aboutUsContent = {
-  header: 'Обо мне',
-  subHeader: ['Мы в YULIA KURYEZ Ballroom Dresses', <br/>, 'уже 8 лет шьём бальные платья для соревнований'],
-  banner1: [<h1>Юлия Курьез - основатель и главный дизайнер YULIA KURYEZ Ballroom Dresses.</h1>,
-    'Расскажу коротко обо мне и моих платьях - нам  придется оглянуться назад. Все началось с семьи и детей. ',
-    'Моему сыну было 6 лет, когда он достаточно твердо завил о желании заниматься бальными танцами. ', <br/>, <br/>,
-    'Время шло, сын занимался в клубе и забирала я его с тренировок уже с младшей дочерью… Надо ли говорить, ',
-    'что не прошо и года, как в танцах у меня уже было двое детей! Да, конечно, первое платье для дочери было ',
-    'приобретено в магазине, но в какой-то момент, после первых же соревнваний, захотелось сшить рейтинговое платье ',
-    'самой – нужного фасона и цвета.'
-  ],
-  banner2: ['Платье получилось – оно было ярким, подходило по цветотипу и фактуре, дочь сияла и тренеры были доволны. ',
-    'Вот и вся предыстория, расказанная максимально емко.', <br/>, <br/>,
-    'Мои дети, оттанцевав 10 лет, пошли другими путями в жизни, ',
-    'а я занимаюсь дизайном и пошивом бальных платьев и резвычайно рада этому обстоятелству! В декабре 2019 года я ',
-    'завершила второе всшее образование и стала дипломированным специалистом – Стилист-имиджмейкер широкого профиля. ',
-    'Конечно, курс чрезвычайно помогает мне а работе.'
-  ],
+//Gnav content
+
+const contentGnavLang = {
+  ru: {
+    aboutMe: 'МОЯ ИСТОРИЯ',
+    catalogue: 'МОИ РАБОТЫ',
+    process: 'ПРОЦЕСС',
+    contactMe: 'КОНТАКТ',
+  },
+  en: {
+    aboutMe: 'MY STORY',
+    catalogue: 'MY WORK',
+    process: 'PROCESS',
+    contactMe: 'CONTACT ME',
+  },
 }
 
-const homepageContent = {
-  header: 'Бальные платья, которые расцветают на паркете',
-  topBanner: [' YULIA KURYEZ', <br/> ,'Ballroom Dresses',],
-  banner1: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
-    'ut labore et dolore magna aliqua. Etiam sit amet nisl purus in mollis.', <br/>, <br/>, 
-    'Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. Augue ut lectus arcu bibendum at varius.',
-    'Dolor sed viverra ipsum nunc.'
-  ],
-  banner2: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
-    'ut labore et dolore magna aliqua. Etiam sit amet nisl purus in mollis.', <br/>, <br/>, 
-    'Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. Augue ut lectus arcu bibendum at varius.',
-    'Dolor sed viverra ipsum nunc.'
-  ],
-  header2: 'Платья, выпущенные на паркет',
-  priceHeader: 'Цены.',
-  priceList: {'list' : [
-    {
-      name: 'blue dress',
-      price: '5000.00 руб.'
-    },
-    {
-      name: 'green dress',
-      price: '200.00 руб.'
-    },
-    {
-      name: 'some dress',
-      price: '1300.00 руб.'
-    },
-    {
-      name: 'not a dress',
-      price: '1200.00 руб.'
-    },
-    {
-      name: 'yellow dress',
-      price: '800.00 руб.'
-    },
-    {
-      name: 'pink dress',
-      price: '700.00 руб.'
-    }
-  ]}
+//Footer content
+
+const contentFooterLang = {
+  ru: {
+    email: ['Почта: ', <a href='mailto:test@test.mail'>test@test.mail</a>],
+    phone: ['Телефон: ', <a href='tel:+71235678'>+7 123 56 78</a>],
+  },
+  en: {
+    email: ['Email: ', <a href='mailto:test@test.mail'>test@test.mail</a>],
+    phone: ['Phone: ', <a href='tel:+71235678'>+7 123 56 78</a>],
+  },
 }
+
+//Not found content
+
+const notFoundLang = {
+  ru: {
+    header: ['Страница не найдена', <h1>404</h1>],
+  },
+  en: {
+    header: ['Page not found', <h1>404</h1>],
+  },
+}
+
+//Home Page content
+
+const homepageContentLang = {
+  ru: {
+    header: 'Бальные платья, которые расцветают на паркете',
+    topBanner: [' YULIA KURYEZ', <br/> ,'Ballroom Dresses',],
+    banner1: [<h1>Пошив юбок</h1>, 'Пошив юбки на заказ — это возможность получить качественную красивую вещь, идеально сидящую на вашей фигуре. ',
+      'В ателье Гардероб вы можете сшить юбку любой модели по вашим меркам. ',
+      'Просто расскажите нам, изделие какого фасона вы хотите получить, и мы воплотим вашу идею!'
+    ],
+    banner2: ['Чтобы юбка отлично сидела и подходила вам, мы предложим свои идеи по улучшению модели, ',
+      'а также большой выбор тканей различных расцветок и фактур. Мы позаботимся о красивой внешней и внутренней отделке изделия ',
+      '— ведь качественная вещь хороша во всем! В результате вы получите удобную и красивую юбку, отвечающую вашему вкусу.'
+    ],
+    header2: 'Платья, выпущенные на паркет',
+    priceHeader: 'Цены',
+    priceList: {'list' : [
+      {
+        name: 'Платье 1',
+        price: '5000.00 руб.'
+      },
+      {
+        name: 'Платье 2',
+        price: '200.00 руб.'
+      },
+      {
+        name: 'Платье 3',
+        price: '1300.00 руб.'
+      },
+      {
+        name: 'Платье 4',
+        price: '1200.00 руб.'
+      },
+      {
+        name: 'Платье 5',
+        price: '800.00 руб.'
+      },
+      {
+        name: 'Платье 6',
+        price: '700.00 руб.'
+      }
+    ]}
+  },
+  en: {
+    header: 'Ball dresses that bloom on the floor',
+    topBanner: [' YULIA KURYEZ', <br/> ,'Ballroom Dresses',],
+    banner1: [<h1>Sewing dresses</h1>, 'Sewing skirts to order is an opportunity to get a high-quality beautiful thing that ',
+    'fits perfectly on your figure. At the Wardrobe atelier you can sew a skirt of any model according to your measurements. ',
+    'Just tell us what style you want and we\'ll make your idea come true!'
+    ],
+    banner2: ['In order for the skirt to fit and fit you perfectly, we will offer our ideas for improving the model, ',
+    'as well as a large selection of fabrics of various colors and textures. We will take care of the beautiful exterior and interior ',
+    'decoration of the product - after all, a quality thing is good in everything! As a result, you will get a comfortable ',
+    'and beautiful skirt that suits your taste.'
+    ],
+    header2: 'Dresses released on the parquet',
+    priceHeader: 'Prices',
+    priceList: {'list' : [
+      {
+        name: 'Dress 1',
+        price: '5000.00 RUB'
+      },
+      {
+        name: 'Dress 2',
+        price: '200.00 RUB'
+      },
+      {
+        name: 'Dress 3',
+        price: '1300.00 RUB'
+      },
+      {
+        name: 'Dress 4',
+        price: '1200.00 RUB'
+      },
+      {
+        name: 'Dress 5',
+        price: '800.00 RUB'
+      },
+      {
+        name: 'Dress 6',
+        price: '700.00 RUB'
+      }
+    ]}
+  },
+}
+
+//About us content
+
+const aboutUsContentLang = {
+  ru: {
+    header: 'Моя История',
+    subHeader: ['Мы в YULIA KURYEZ Ballroom Dresses', <br/>, 'уже 8 лет шьём бальные платья для соревнований'],
+    banner1: [<h1>Юлия Курьез - основатель и главный дизайнер YULIA KURYEZ Ballroom Dresses.</h1>,
+      'Расскажу коротко обо мне и моих платьях - нам  придется оглянуться назад. Все началось с семьи и детей. ',
+      'Моему сыну было 6 лет, когда он достаточно твердо завил о желании заниматься бальными танцами. ', <br/>, <br/>,
+      'Время шло, сын занимался в клубе и забирала я его с тренировок уже с младшей дочерью… Надо ли говорить, ',
+      'что не прошо и года, как в танцах у меня уже было двое детей! Да, конечно, первое платье для дочери было ',
+      'приобретено в магазине, но в какой-то момент, после первых же соревнваний, захотелось сшить рейтинговое платье ',
+      'самой – нужного фасона и цвета.'
+    ],
+    banner2: ['Платье получилось – оно было ярким, подходило по цветотипу и фактуре, дочь сияла и тренеры были доволны. ',
+      'Вот и вся предыстория, расказанная максимально емко.', <br/>, <br/>,
+      'Мои дети, оттанцевав 10 лет, пошли другими путями в жизни, ',
+      'а я занимаюсь дизайном и пошивом бальных платьев и резвычайно рада этому обстоятелству! В декабре 2019 года я ',
+      'завершила второе всшее образование и стала дипломированным специалистом – Стилист-имиджмейкер широкого профиля. ',
+      'Конечно, курс чрезвычайно помогает мне а работе.'
+    ],
+  },
+  en: {
+    header: 'My Story',
+    subHeader: ['YULIA KURYEZ Ballroom Dresses', <br/>, 'we have been sewing ball gowns for competitions for 8 years'],
+    banner1: [<h1>Yulia Kuryez - founder and chief designer YULIA KURYEZ Ballroom Dresses.</h1>,
+    'I\'ll tell you briefly about me and my dresses - we\'ll have to look back. It all started with family and children. ',
+    'My son was 6 years old when he quite firmly declared his desire to take up ballroom dancing. ', <br/>, <br/>,
+    'Time passed, my son was engaged in the club and I took him from training already with my youngest daughter... Needless to say, ',
+    'that not even a year later, as in dancing, I already had two children! Yes, of course, the first dress for the daughter was ',
+    'purchased in a store, but at some point, after the very first competition, I wanted to sew a rating dress',
+    'most - the desired style and color.'
+    ],
+    banner2: ['The dress turned out - it was bright, it matched the color type and texture, the daughter shone and the coaches were happy. ',
+    'That\'s the whole backstory, told as succinctly as possible.', <br/>, <br/>,
+    'My children, after dancing for 10 years, have taken other paths in life,',
+    'and I am engaged in the design and tailoring of ball gowns and I am extremely pleased with this circumstance! In December 2019 I',
+    'completed her second higher education and became a certified specialist - a stylist-image maker of a wide profile. ',
+    'Of course, the course helps me immensely at work.'
+    ],
+  },
+}
+
+//Contact us content
 
 const contactUsContentLang = {
   ru: {
@@ -101,62 +210,54 @@ const contactUsContentLang = {
   },
 }
 
-const catalogueContent = {
-  header: 'Мои Работы',
-  firstCarousele: [
-    {
-      header: 'First slide label',
-      copy: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
-    },
-    {
-      header: 'Second slide label',
-      copy: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
-    },
-    {
-      header: 'Third slide label',
-      copy: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
-    },
-    {
-      header: 'Fourth slide label',
-      copy: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
-    },
-  ],
-}
+//Catalogue content
 
-const notFoundLang = {
+const catalogueContentLang = {
   ru: {
-    header: ['Страница не найдена', <h1>404</h1>],
+    header: 'Мои Работы',
+    firstCarousele: [
+      {
+        header: 'Первый слайд',
+        copy: 'Пример описания под слайдом. Здест будет текст.',
+      },
+      {
+        header: 'Второй слайд',
+        copy: 'Пример описания под слайдом. Здест будет текст.',
+      },
+      {
+        header: 'Третий слайд',
+        copy: 'Пример описания под слайдом. Здест будет текст.',
+      },
+      {
+        header: 'Четвертый слайд',
+        copy: 'Пример описания под слайдом. Здест будет текст.',
+      },
+    ],
   },
   en: {
-    header: ['Page not found', <h1>404</h1>],
+    header: 'My Work',
+    firstCarousele: [
+      {
+        header: 'First slide label',
+        copy: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
+      },
+      {
+        header: 'Second slide label',
+        copy: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
+      },
+      {
+        header: 'Third slide label',
+        copy: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
+      },
+      {
+        header: 'Fourth slide label',
+        copy: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
+      },
+    ],
   },
 }
 
-const contentGnavLang = {
-  ru: {
-    aboutMe: 'ОБО МНЕ',
-    catalogue: 'МОИ РАБОТЫ',
-    process: 'ПРОЦЕСС',
-    contactMe: 'КОНТАКТ',
-  },
-  en: {
-    aboutMe: 'ABOUT ME',
-    catalogue: 'MY WORK',
-    process: 'PROCESS',
-    contactMe: 'CONTACT ME',
-  },
-}
-
-const contentHeaderLang = {
-  ru: {
-    email: ['Почта: ', <a href='mailto:test@test.mail'>test@test.mail</a>],
-    phone: ['Телефон: ', <a href='tel:+71235678'>+7 123 56 78</a>],
-  },
-  en: {
-    email: ['Email: ', <a href='mailto:test@test.mail'>test@test.mail</a>],
-    phone: ['Phone: ', <a href='tel:+71235678'>+7 123 56 78</a>],
-  },
-}
+//Process content
 
 const processContentLang = {
   ru: {
@@ -171,6 +272,12 @@ const processContentLang = {
     'потребности и требования.', <br/>, <br/>, 'На протяжении всего процесса шитья наша команда будет регулярно присылать вам фотографии ',
     'процесса пошива одежды, чтобы вы могли убедиться, что это именно то платье, которое вы хотели.'
     ],
+    banner3: [<h1>Доставка</h1>, 'Когда весь процесс будет завершен и платье будет одобрено вами, мы доставим его курьерской службой.',
+    <br/>, 'Полная процедура от заказа до доставки занимает примерно 4 недели.',
+    <br/>, 'Если это срочно, сообщите нам об этом в начале сотрудничества.',
+    <br/>, 'Так мы сможем обеспечить требуемые сроки поставки товара.',
+    <br/>, <br/>, 'Осталось только наслаждаться платьем своей мечты!'
+    ],
   },
   en: {
     header: 'Process',
@@ -184,13 +291,24 @@ const processContentLang = {
       'needs and requirements.', <br/>, <br/>, 'During all the sewing process our team will regularly send you pictures of dressmaking progress ',
       'that you can make sure that it is your wanted dress.'
     ],
+    banner3: [<h1>Delivery</h1>, 'When all the process are finished and the dress is approved by you, we will deliver it via courier service.',
+      <br/>, 'The full procedure from the order to delivery takes approximately 4 weeks.',
+      <br/>, 'If it is urgency, please let us know at the beginning of collaboration.',
+      <br/>, 'In that way we will be able to ensure required delivery time of the product.',
+      <br/>, <br/>, 'Only enjoying of your dream dress is left now!'
+    ],
   },
 }
 
 const contentGnav      = contentGnavLang[currentCookie];
-const contentHeader    = contentHeaderLang[currentCookie];
-const contactUsContent = contactUsContentLang[currentCookie];
+const contentFooter    = contentFooterLang[currentCookie];
 const notFound         = notFoundLang[currentCookie];
+const homepageContent  = homepageContentLang[currentCookie];
+const aboutUsContent   = aboutUsContentLang[currentCookie];
+const contactUsContent = contactUsContentLang[currentCookie];
+const catalogueContent = catalogueContentLang[currentCookie];
 const processContent   = processContentLang[currentCookie];
 
-export {aboutUsContent, homepageContent, contactUsContent, catalogueContent, notFound, contentGnav, contentHeader, processContent};
+
+
+export {aboutUsContent, homepageContent, contactUsContent, catalogueContent, notFound, contentGnav, contentFooter, processContent};

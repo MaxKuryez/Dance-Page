@@ -1,6 +1,6 @@
 import './footer.scss';
 import vkLogo from '../../assets/global/vk-logo.png';
-import {contentHeader} from '../globals/content.js';
+import {contentFooter} from '../globals/content.js';
 import Cookies from 'universal-cookie';
 
 function Gnav() {
@@ -22,10 +22,10 @@ function Gnav() {
     <div className='footer-container'>
       <div className='footer-menu-row'>
         <div className='menu-link'>
-          <span>{contentHeader.phone}</span>
+          <span>{contentFooter.phone}</span>
         </div>
         <div className='menu-link'>
-          <span>{contentHeader.email}</span>
+          <span>{contentFooter.email}</span>
         </div>
         <div className='menu-link language'>
           <span><a onClick={(e) => {handleLanguageSwitch(e, 'ru')}}>РУССКИЙ</a> / <a onClick={(e) => {handleLanguageSwitch(e, 'en')}}>ENGLISH</a></span>

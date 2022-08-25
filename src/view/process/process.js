@@ -12,17 +12,22 @@ function ProcessPage() {
         bannerText={processContent.header}
         bannerType={'header'}/>
       </div>
-      <div className='hp-banner second-banner'>
+      <div className='hp-banner first-banner'>
         <Banner
         banneraImage={BannerStart}
         bannerText={processContent.banner1}
         bannerType={'left'}/>
       </div>
-      <div className='hp-banner third-banner'>
+      <div className='hp-banner second-banner'>
         <Banner
         banneraImage={BannerCreation}
         bannerText={processContent.banner2}
         bannerType={'right'}/>
+      </div>
+      <div className='hp-banner third-banner'>
+        <Banner
+        bannerText={processContent.banner3}
+        bannerType={'text'}/>
       </div>
     </div>
   );
