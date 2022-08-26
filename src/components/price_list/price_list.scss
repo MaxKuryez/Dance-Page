@@ -1,10 +1,12 @@
 @import '../globals/global_variables.scss';
 
 .price-list-container {
-  margin: 45px 25% 0 25%;
-  width: 50%;
+  margin: auto;
+  width: 80%;
   padding: 0;
   margin-bottom: 40px;
+  max-width: 750px;
+  margin-top: 40px;
   .price-list-header {
     font-family: $header-font;
     font-size: $header-font-size;

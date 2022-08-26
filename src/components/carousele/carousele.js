@@ -32,7 +32,7 @@ function CarouselBlock({
     console.log(index);
     catalogueArray.push(
       <div className='card-container'>
-        <img className='d-block w-50 m-auto' src={image} alt='First slide'/>
+        <img className='d-block m-auto' src={image} alt='First slide'/>
           <h3>{catalogueCopy[index] && catalogueCopy[index].header ? catalogueCopy[index].header : ''}</h3>
           <p>{catalogueCopy[index] && catalogueCopy[index].copy ? catalogueCopy[index].copy : ''}</p>
       </div>

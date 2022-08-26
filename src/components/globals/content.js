@@ -158,7 +158,7 @@ const aboutUsContentLang = {
   },
   en: {
     header: 'My Story',
-    subHeader: ['YULIA KURYEZ Ballroom Dresses', <br/>, 'we have been sewing ball gowns for competitions for 8 years'],
+    subHeader: ['YULIA KURYEZ Ballroom Dresses', <br/>, 'we have been sewing dresses for competitions for 8 years'],
     banner1: [<h1>Yulia Kuryez - founder and chief designer YULIA KURYEZ Ballroom Dresses.</h1>,
     'I\'ll tell you briefly about me and my dresses - we\'ll have to look back. It all started with family and children. ',
     'My son was 6 years old when he quite firmly declared his desire to take up ballroom dancing. ', <br/>, <br/>,
