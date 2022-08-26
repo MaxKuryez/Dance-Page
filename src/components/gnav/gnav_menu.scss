@@ -61,7 +61,9 @@
     .bm-item {
       display: inline-block;
       text-decoration: none;
+      outline: none;
       a {
+        outline: none;
         font-weight: 600;
         text-decoration: none;
         font-family: $header-font;

@@ -11,13 +11,13 @@ body {
 }
 
 .mobile-hidden {
-  @media (max-width: 1023px) {
+  @media (max-width: 1025px) {
     display: none!important;
   }
 }
 
 .pc-hidden {
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
       display: none!important;
   }
 }

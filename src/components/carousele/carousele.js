@@ -6,12 +6,22 @@ function CarouselBlock({
   catalogueCopy,
 }) {
 
-  const settings = {
+  const settingsPC = {
     dots: true,
     infinite: false,
     arrows: true,
     speed: 500,
     slidesToShow: 2,
+    slidesToScroll: 1,
+    className: 'slider-component',
+  };
+
+  const settingsMobile = {
+    dots: true,
+    infinite: false,
+    arrows: true,
+    speed: 500,
+    slidesToShow: 1,
     slidesToScroll: 1,
     className: 'slider-component',
   };
@@ -31,9 +41,16 @@ function CarouselBlock({
 
   return (
     <div className='carousele-container'>
-      <Slider {...settings}>
+      <div className='carousele-element mobile-hidden'>
+        <Slider {...settingsPC}>
+          {catalogueArray}
+        </Slider>
+      </div>
+      <div className='carousele-element pc-hidden'>
+      <Slider {...settingsMobile}>
         {catalogueArray}
       </Slider>
+      </div>
     </div>
   );
 }
