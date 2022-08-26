@@ -8,10 +8,10 @@
     .menu-link {
       float: left;
       padding: 35px 50px 0px 25px;
+      font-family: $copy-font;
+      font-weight: 600;
       a {
-        font-weight: 600;
         text-decoration: none;
-        font-family: $header-font;
         font-size: $gnav-font-size;
         color: $gnav-color;
         &:hover {
@@ -30,17 +30,25 @@
         height: 50px;
       }
     }
-    .location-link {
-      float: right;
-      padding: 70px 0px 0px 25px;
+  }
+  .footer-mobile-row {
+    padding: 3% 0 3% 8%;
+    .logo-container {
+      margin: 25px 0px 15px 0px;
+      img {
+        height: 50px;
+      }
+    }
+    .menu-link {
+      margin-top: 10px;
+      font-family: $copy-font;
+      font-weight: 600;
       a {
         text-decoration: none;
-        font-family: $header-font;
         font-size: $gnav-font-size;
         color: $gnav-color;
-        font-weight: 600;
         &:hover {
-        text-decoration: underline;
+          text-decoration: underline;
         }
       }
     }

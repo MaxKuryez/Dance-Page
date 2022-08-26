@@ -20,7 +20,7 @@ function Gnav() {
 
   return (
     <div className='footer-container'>
-      <div className='footer-menu-row'>
+      <div className='footer-menu-row mobile-hidden'>
         <div className='menu-link'>
           <span>{contentFooter.phone}</span>
         </div>
@@ -31,10 +31,26 @@ function Gnav() {
           <span><a onClick={(e) => {handleLanguageSwitch(e, 'ru')}}>РУССКИЙ</a> / <a onClick={(e) => {handleLanguageSwitch(e, 'en')}}>ENGLISH</a></span>
         </div>
         <div className='logo-container'>
-            <a href='https://vk.com/yuliyakuryezstudio' target='blank'>
-               <img src={vkLogo}></img>
-            </a>
-          </div>
+          <a href='https://vk.com/yuliyakuryezstudio' target='blank'>
+            <img src={vkLogo}></img>
+          </a>
+        </div>
+      </div>
+      <div className='footer-mobile-row pc-hidden'>
+        <div className='menu-link'>
+          <span>{contentFooter.phone}</span>
+        </div>
+        <div className='menu-link'>
+          <span>{contentFooter.email}</span>
+        </div>
+        <div className='menu-link language'>
+          <span><a onClick={(e) => {handleLanguageSwitch(e, 'ru')}}>РУССКИЙ</a> / <a onClick={(e) => {handleLanguageSwitch(e, 'en')}}>ENGLISH</a></span>
+        </div>
+        <div className='logo-container'>
+          <a href='https://vk.com/yuliyakuryezstudio' target='blank'>
+            <img src={vkLogo}></img>
+          </a>
+        </div>
       </div>
     </div>
   );
