@@ -11,12 +11,16 @@ const contentGnavLang = {
     catalogue: 'МОИ РАБОТЫ',
     process: 'ПРОЦЕСС',
     contactMe: 'КОНТАКТ',
+    email: 'test@test.mail',
+    phone: '+7 1235678',
   },
   en: {
     aboutMe: 'MY STORY',
     catalogue: 'MY WORK',
     process: 'PROCESS',
     contactMe: 'CONTACT ME',
+    email: 'test@test.mail',
+    phone: '+7 1235678',
   },
 }
 
