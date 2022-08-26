@@ -1,7 +1,8 @@
-import logo from '../../assets/global/logo.jpg';
-import burgerMenu from '../../assets/global/icons/burger_menu.png';
 import './gnav_menu.scss';
-import {contentGnav} from '../globals/content.js'
+import logo from '../../assets/global/logo.jpg';
+import { contentGnav } from '../globals/content.js'
+import SideBar from "./sidebar";
+import React, { useState } from 'react';
 
 function Gnav() {
   return (
@@ -31,10 +32,9 @@ function Gnav() {
             <img src={logo}></img>
           </a>
         </div>
-        <div className='menu-link mobile'>
-          <img src={burgerMenu}></img>
-        </div>
+        <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
       </div>
+      <div className='gnav-mobile-space pc-hidden'></div>
     </div>
   );
 }
