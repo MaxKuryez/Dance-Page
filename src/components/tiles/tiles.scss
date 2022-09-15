@@ -3,6 +3,10 @@
 .tiles-container {
   max-width: 90%;
   margin: 0 5% 0 5%;
+  @media (max-width: 1025px) {
+    max-width: 100%;
+    margin: 0;
+  }
   .tiles-header {
     text-align: center;
     margin: 80px 0 80px 0;
@@ -12,7 +16,7 @@
     }
   }
   .img-container {
-    width: 33.3333333%;
+    width: 33.33%;
     display: inline-block;
     vertical-align: bottom;
     #react-modal-image-img {
@@ -26,7 +30,11 @@
       user-select: none;
     }
     .__react_modal_image__header {
-      background-color: $brand-color;
+      background-color: #b0b0b0;
+      height: 40px;
+    }
+    .__react_modal_image__icon_menu {
+      margin-top: -7px;
     }
   }
 }

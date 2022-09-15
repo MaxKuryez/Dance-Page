@@ -1,6 +1,13 @@
 @import '../../components/globals/global_variables.scss';
 
 .contact-us-container {
+  @media (max-width: 1025px) {
+    .banner-header {
+      p {
+        font-size: 33px;
+      }
+    }
+  }
   .contact-us-form-container {
     font-family: $copy-font;
     font-size: $copy-font-size;
@@ -20,6 +27,15 @@
       button {
         font-weight: 600;
         font-size: $copy-font-size;
+      }
+      input {
+        font-weight: 600;
+      }
+      textarea {
+        font-weight: 600;
+      }
+      .alert-danger {
+        border-radius: 0;
       }
     }
     margin-bottom: 60px;

@@ -6,10 +6,17 @@ import {notFound} from '../../components/globals/content.js';
 function AboutUs() {
   return (
     <div className='not-found-container'>
+      <div className='pc-not-found mobile-hidden'>
         <Banner
         banneraImage={BannerImg1}
         bannerType={'left'}
         bannerText={notFound.header}/>
+      </div>
+      <div className='mobile-not-found pc-hidden'>
+        <Banner
+        bannerType={'text'}
+        bannerText={notFound.header}/>
+      </div>
     </div>
   );
 }
